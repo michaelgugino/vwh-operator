@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: vwh-operator
+subjects:
+- kind: ServiceAccount
+  name: vwh-operator
+roleRef:
+  kind: Role
+  name: vwh-operator
+  apiGroup: rbac.authorization.k8s.io
